@@ -11,18 +11,18 @@
 
 \section{基本構成}
 
-本システムのデバイスには、Microsoft社の提供するHololensを使用している。スタンドアロンで動作するARグラスであり、着用したままであっても、日常を過ごす事ができる。Hololens上で動作するソフトウェアの実装には、Unity\cite{unity}, vuforia\cite{vuforia}を使用した。予めマーカー画像を準備した部屋内でHololensを装着し、本システムを起動することで動作する。
+本システムのデバイスには、Microsoft社の提供するHololensを使用している。スタンドアロンで動作するARグラスであり、着用したままであっても、日常を過ごす事ができる。Hololens上で動作するソフトウェアの実装には、Unity\footnote{Unity: \url{https://unity.com/ja} (accessed 2021-01-28)}, vuforia\footnote{vuforia: \url{https://www.ptc.com/ja/products/vuforia} (accessed 2021-01-28)}を使用した。予めマーカー画像を準備した部屋内でHololensを装着し、本システムを起動することで動作する。
 
 マーカーには、processingで生成したランダムな画像を使用した。
 
 \begin{figure}[htbp]
-  \begin{minipage}{0.5\hsize}
+  \begin{minipage}{0.3\hsize}
     \begin{center}
       \fbox{\includegraphics[width=60mm]{images/marker.png}}
     \end{center}
     \caption{使用したマーカーの全体像}
   \end{minipage}
-  \begin{minipage}{0.5\hsize}
+  \begin{minipage}{0.7\hsize}
     \begin{center}
       \fbox{\includegraphics[width=60mm]{images/markers.jpg}}
     \end{center}
@@ -45,7 +45,7 @@
 
 \begin{figure}[htbp]
   \begin{center}
-     \fbox{\includegraphics[width=100mm]{images/room_panorama.jpg}}
+     \fbox{\includegraphics[width=180mm]{images/room_panorama.jpg}}
   \end{center}
   \caption{システムを運用した部屋のパノラマ}
   \label{fig:sample1}
@@ -56,17 +56,16 @@
 Hololensを装着し、本システムを起動する事で、hololensに付いているカメラの映像の画像認識が開始される。マーカーを注視する事で、対象のマーカーが認識され、そこに対象のコンテンツが表示される。コンテンツはマーカーに追従するため、マーカーの付いている物体を移動しても問題はない。
 
 \begin{figure}[htbp]
-  \begin{minipage}{0.5\hsize}
-    \begin{center}
-      \fbox{\includegraphics[width=60mm]{images/test_calendar.png}}
-    \end{center}
-    \caption{仮想的に代替したカレンダー}
-  \end{minipage}
-  \begin{minipage}{0.5\hsize}
-    \begin{center}
-      \fbox{\includegraphics[width=60mm]{images/test_digital_clock.png}}
-    \end{center}
-    \caption{仮想的に代替したデジタル時計}
-  \end{minipage}
+  \begin{center}
+     \fbox{\includegraphics[width=100mm]{images/test_calendar.png}}
+  \end{center}
+  \caption{仮想的に代替したカレンダー}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
+     \fbox{\includegraphics[width=100mm]{images/test_digital_clock.png}}
+  \end{center}
+  \caption{仮想的に代替したデジタル時計}
 \end{figure}
 
